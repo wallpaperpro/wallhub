@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallpaper Haven</title>
+    <link rel="stylesheet" href="style.css">
+    
+    </head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <h1 class="logo">Wallpaper<span>Hub</span></h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search wallpapers (e.g. car, forest)..." onkeyup="searchWallpapers()">
+        </div>
+    </div>
+    <div class="category-bar">
+        <button onclick="filterCategory('all')" class="cat-btn active">All</button>
+        <button onclick="filterCategory('nature')" class="cat-btn">Nature</button>
+        <button onclick="filterCategory('cars')" class="cat-btn">Cars</button>
+        <button onclick="filterCategory('abstract')" class="cat-btn">Abstract</button>
+        <button onclick="filterCategory('cyberpunk')" class="cat-btn">Cyberpunk</button>
+    </div>
+</header>
+
+<main id="gallery" class="grid-container">
+    </main>
+
+<footer>
+    <p>&copy; 2026 My Wallpaper Haven. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
